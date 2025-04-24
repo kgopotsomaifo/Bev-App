@@ -10,9 +10,8 @@ app.use(express.json());
 app.use(cors());
 
 const uri =
-  "mongodb+srv://Kgopotso:codelord44@hyperiondev.vazzp.mongodb.net/bev-app?retryWrites=true&w=majority";
-// const uri =
-//   "mongodb+srv://Kgopotso:codelord44@hyperiondev.vazzp.mongodb.net/?retryWrites=true&w=majority&appName=Hyperiondev";
+  process.env.MONGODB_URI
+
 
 // Connect to MongoDB
 mongoose
